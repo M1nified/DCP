@@ -1,6 +1,6 @@
 function launchProblem() {
     const hash = window.location.hash.replace(/^#/, ''),
-        fileName = encodeURIComponent(`#${hash}`),
+        fileName = (`${hash}`),
         fileUrl = `./${fileName}`;
     console.debug(fileUrl)
 
@@ -56,7 +56,7 @@ function launcheReadme() {
                 readmeElement = document.querySelector('.readme'),
                 converter = new showdown.Converter(),
                 readmeHtml = converter.makeHtml(readmeText);
-            readmeElement.innerHTML = readmeHtml;
+            readmeElement.innerHTML = readmeHtml.replace(/problems\//, '#problems/');
         })
         .catch(reason => console.error(reason))
 }
