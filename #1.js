@@ -1,5 +1,6 @@
-// Problem:
-// Given a list of numbers and a number k, return whether any two numbers from the list add up to k.
+/**
+Problem: Given a list of numbers and a number k, return whether any two numbers from the list add up to k.
+**/
 
 function solution1(numbers, k) {
   for (let i = 0; i < numbers.length; i++) {

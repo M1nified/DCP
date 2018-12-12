@@ -1,0 +1,26 @@
+{
+  "name": "dcp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server:solo": "./node_modules/.bin/live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M1nified/DCP.git"
+  },
+  "author": "M1nified",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/M1nified/DCP/issues"
+  },
+  "homepage": "https://github.com/M1nified/DCP#readme",
+  "devDependencies": {
+    "@types/prismjs": "^1.9.0",
+    "@types/showdown": "^1.7.5",
+    "live-server": "^1.2.1"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,80 @@
+body{
+    font-family: monospace;
+    background: #ffffff;
+    margin: auto;
+    padding: 1em;
+    max-width: 1920px;
+}
+.separator{
+    height: 0.1em;
+}
+
+.readme{
+    color: #272727;
+    background: #2727272a;
+    border: solid #272727 3px;
+    border-radius: 5px;
+    padding: 0 1em;
+    margin: 0 0 0.5em 0;
+    overflow: hidden;
+}
+
+footer{
+    color: #272727;
+    background: #ffffff;
+    border: solid #272727 3px;
+    border-radius: 5px;
+    padding: .5em 1em;
+    margin: 0.5em 0 0.5em 0;
+    overflow: hidden;
+}
+
+:any-link{
+    color: inherit;
+}
+:any-link:hover{
+    color: green;
+}
+
+.code-box{
+    font-family: monospace;
+    padding: 0;
+    color: #e7e7e7;
+    background: #272727;
+    border: solid #272727;
+    border-radius: 5px 5px 0 0;
+}
+.code-box-header{
+    padding: .5em 1em;
+    border-bottom: solid 1px #e7e7e7;
+}
+.code-box-scroll{
+    height: 30em;
+    display: block;
+    padding: 0em 2em;
+    margin: .2em 0 0 0;
+    overflow: auto;
+}
+code{
+    font-family: monospace;
+}
+.console-box{
+    border: solid #272727;
+    background: #272727;
+    color: #e7e7e7;
+    font-family: monospace;
+    padding: 0;
+    border-radius: 0 0 5px 5px;
+}
+.console-box-header{
+    padding: .5em 1em;
+    border-bottom: solid 1px #e7e7e7;
+}
+.console{
+    height: 15em;
+    width: 100%;
+    outline: none;
+    border: none;
+    overflow: auto;
+    margin: .2em 0 0 0;
+}
