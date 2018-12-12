@@ -4,6 +4,10 @@ function launchProblem() {
         fileUrl = `./${fileName}`;
     console.debug(fileUrl)
 
+    if (hash == '') {
+        return false;
+    }
+
     fetch(fileUrl)
         .then(resp => {
             if (resp.status === 200)
