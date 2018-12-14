@@ -15,7 +15,8 @@ function launchProblem() {
         })
         .then(code => {
             const codeElement = document.querySelector('.code'),
-                consoleElement = document.querySelector('.console'),
+                consoleHolder = document.querySelector('.console-holder'),
+                consoleElement = document.createElement('iframe'),
                 codeDetailsElement = document.querySelector('.code-box-header-details');
             codeElement.innerHTML = '';
             let codeHtml = Prism.highlight(code, Prism.languages.javascript, 'javascript');
@@ -41,7 +42,10 @@ function launchProblem() {
                 }
                 </script>
                 <script>${code}</script></body>`;
+            consoleElement.classList.add('console');
             consoleElement.src = 'data:text/html;charset=utf-8,' + encodeURI(html);
+            consoleHolder.firstChild && consoleHolder.removeChild(consoleHolder.firstChild);
+            consoleHolder.appendChild(consoleElement);
         })
         .catch(reason => {
             console.error(reason);
