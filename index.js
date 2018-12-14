@@ -60,7 +60,7 @@ function launcheReadme() {
                 readmeElement = document.querySelector('.readme'),
                 converter = new showdown.Converter(),
                 readmeHtml = converter.makeHtml(readmeText);
-            readmeElement.innerHTML = readmeHtml.replace(/problems\//, '#problems/');
+            readmeElement.innerHTML = readmeHtml.replace(/problems\//g, '#problems/');
         })
         .catch(reason => console.error(reason))
 }
