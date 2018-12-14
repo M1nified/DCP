@@ -78,3 +78,19 @@ code{
     overflow: auto;
     margin: .2em 0 0 0;
 }
+
+/* SCROLLBARS */
+::-webkit-scrollbar {
+    width: .4em;
+    height: .4em;
+}
+::-webkit-scrollbar-track {
+    display: none;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #e7e7e7;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-corner{
+    display: none;
+}
