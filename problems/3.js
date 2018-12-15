@@ -24,7 +24,6 @@ function solution1() {
         return d().s1();
       },
       d = function() {
-        console.log();
         const
           char = stringToDeserialize[0];
         stringToDeserialize = stringToDeserialize.substring(1);
