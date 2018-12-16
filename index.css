@@ -1,4 +1,5 @@
 body{
+    color: #e7e7e7;
     font-family: monospace;
     background: #111111;
     margin: auto;
@@ -9,6 +10,14 @@ body{
     height: 0.1em;
 }
 
+.hideable{
+}
+
+.hidden{
+    max-height: 0 !important;
+    overflow: hidden;
+}
+
 .readme{
     color: #e7e7e7;
     background: none;
@@ -17,6 +26,10 @@ body{
     padding: 0 1em;
     margin: 0 0 0.5em 0;
     overflow: hidden;
+}
+
+.problem{
+    height: calc( 100vh - 8em );
 }
 
 footer{
@@ -44,13 +57,19 @@ footer{
     background: #272727;
     border: solid #272727;
     border-radius: 3px 3px 0 0;
+    box-sizing: border-box;
+    height: 60%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 .code-box-header{
+    box-sizing: border-box;
     padding: .5em 1em;
     border-bottom: solid 1px #e7e7e7;
 }
 .code-box-scroll{
-    height: 30em;
+    box-sizing: border-box;
     display: block;
     padding: 0em 2em;
     margin: .2em 0 0 0;
@@ -66,13 +85,23 @@ code{
     font-family: monospace;
     padding: 0;
     border-radius: 0 0 3px 3px;
+    box-sizing: border-box;
+    height: 40%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 .console-box-header{
     padding: .5em 1em;
     border-bottom: solid 1px #e7e7e7;
 }
+.console-holder{
+    height: calc( 100% - 2em );
+    overflow: hidden;
+}
 .console{
-    height: 15em;
+    height: 100%;
+    display: block;
     width: 100%;
     outline: none;
     border: none;
