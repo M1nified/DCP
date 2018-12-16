@@ -44,4 +44,5 @@ function testUsing(solution) {
 }
 
 testUsing(solution1);
+console.log('');
 testUsing(solution2);
