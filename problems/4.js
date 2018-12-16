@@ -4,32 +4,44 @@ Problem: Given an array of integers, find the first missing positive integer in 
 
 function solution1(numbers) {
     const
-      map = {};
+        map = {};
     let
-      minPositive = null;
+        minPositive = null;
     numbers.forEach(number => {
-      map[number] = true;
-      if (number > 0 && (minPositive === null || number < minPositive))
-        minPositive = number;
+        map[number] = true;
+        if (number > 0 && (minPositive === null || number < minPositive))
+            minPositive = number;
     });
     let result = minPositive - 1;
     while (map[++result]);
     return result;
-  }
-  
-  const
+}
+
+function solution2(numbers) {
+    numbers.sort();
+    let
+        i = -1,
+        prev;
+    while (numbers[++i] <= 0);
+    prev = numbers[i];
+    while (numbers[i] - 1 === prev || numbers[i] === prev)
+        prev = numbers[i++];
+    return prev + 1;
+}
+
+const
     in1 = [3, 4, -1, 1],
     out1 = 3,
     in2 = [1, 2, 0],
     out2 = 3;
-  
-  function testUsing(solution) {
+
+function testUsing(solution) {
     const
-      result1 = solution(in1),
-      result2 = solution(in2);
+        result1 = solution(in1.slice()),
+        result2 = solution(in2.slice());
     console.log(`${solution.name}: [${in1}] -> ${result1}`);
     console.log(`${solution.name}: [${in2}] -> ${result2}`);
-  }
-  
-  testUsing(solution1);
-  
+}
+
+testUsing(solution1);
+testUsing(solution2);
