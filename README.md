@@ -7,3 +7,5 @@
  - [Given the root to a binary tree, implement serialize(root), which serializes the tree into a string, and deserialize(s), which deserializes the string back into the tree.](./problems/3.js)
  - [Given an array of integers, find the first missing positive integer in linear time and constant space. In other words, find the lowest positive integer that does not exist in the array. The array can contain duplicates and negative numbers as well.](./problems/4.js)
  - [cons(a, b) constructs a pair, and car(pair) and cdr(pair) returns the first and last element of that pair.(...)](./problems/5.js)
+ - [...]()
+ - [Given the mapping a = 1, b = 2, ... z = 26, and an encoded message, count the number of ways it can be decoded.](./problems/7.js)
