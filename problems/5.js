@@ -27,6 +27,7 @@ function solution1() {
     };
 }
 
+// given functions
 function cons(a, b) {
     function pair(f) {
         return f(a, b);
