@@ -9,4 +9,6 @@
  - [cons(a, b) constructs a pair, and car(pair) and cdr(pair) returns the first and last element of that pair.(...)](./problems/5.js)
  - [Implement an XOR linked list](./problems/6.js)
  - [Given the mapping a = 1, b = 2, ... z = 26, and an encoded message, count the number of ways it can be decoded.](./problems/7.js)
- - [Given a list of integers, write a function that returns the largest sum of non-adjacent numbers.](./problems/8.js)
+ - [Given a list of integers, write a function that returns the largest sum of non-adjacent numbers.](./problems/9.js)
+ - [Implement a job scheduler which takes in a function f and an integer n, and calls f after n milliseconds.](./problems/10.js)
+ - [Implement an autocomplete system.](./problems/11.js)
