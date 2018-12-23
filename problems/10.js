@@ -21,12 +21,12 @@ function testUsing(solution) {
     const time0 = new Date().valueOf();
     console.log(`TIME BEFORE TEST ${time0} (+0)`)
     solution(task, 1000);
-    (function timeLoop(){
+    (function timeLoop() {
         let time = new Date().valueOf();
-        if(time - time0 < 1500){
+        if (time - time0 < 1500) {
             console.log(`TIME: ${time} (+${time - time0})`);
             setTimeout(timeLoop, 50)
-        } 
+        }
     })();
 }
 
