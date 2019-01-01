@@ -15,3 +15,5 @@
  - [There exists a staircase with N steps, and you can climb up either 1 or 2 steps at a time. Given N, write a function that returns the number of unique ways you can climb the staircase. The order of the steps matters.](./problems/12.js)
  - [Given an integer k and a string s, find the length of the longest substring that contains at most k distinct characters.](./problems/13.js)
  - [Given a stream of elements too large to store in memory, pick a random element from the stream with uniform probability.](./problems/15.js)
+ - [You run an e-commerce website and want to record the last N order ids in a log.](./problems/16.js)
+ 
