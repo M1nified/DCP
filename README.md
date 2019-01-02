@@ -16,4 +16,4 @@
  - [Given an integer k and a string s, find the length of the longest substring that contains at most k distinct characters.](./problems/13.js)
  - [Given a stream of elements too large to store in memory, pick a random element from the stream with uniform probability.](./problems/15.js)
  - [You run an e-commerce website and want to record the last N order ids in a log.](./problems/16.js)
- 
+ - [Given a string representing the file system in the above format, return the length of the longest absolute path to a file in the abstracted file system. If there is no file in the system, return 0.](./problems/17.js)
