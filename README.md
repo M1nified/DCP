@@ -20,3 +20,4 @@
  - [Given an array of integers and a number k, where 1 <= k <= length of the array, compute the maximum values of each subarray of length k.](./problems/18.js)
  - [Given two singly linked lists that intersect at some point, find the intersecting node. The lists are non-cyclical.](./problems/20.js)
  - [Given an array of time intervals (start, end) for classroom lectures (possibly overlapping), find the minimum number of rooms required.](./problems/21.js)
+ - [Given a dictionary of words and a string made up of those words (no spaces), return the original sentence in a list.](./problems/22.js)
