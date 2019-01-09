@@ -8,6 +8,8 @@
  * 
  */
 
+// http://blog.gainlo.co/index.php/2016/07/12/meeting-room-scheduling-problem/
+
 function solution1(timeIntervals) {
     if (timeIntervals.length <= 1) {
         return timeIntervals.length;
