@@ -19,3 +19,4 @@
  - [Given a string representing the file system in the above format, return the length of the longest absolute path to a file in the abstracted file system. If there is no file in the system, return 0.](./problems/17.js)
  - [Given an array of integers and a number k, where 1 <= k <= length of the array, compute the maximum values of each subarray of length k.](./problems/18.js)
  - [Given two singly linked lists that intersect at some point, find the intersecting node. The lists are non-cyclical.](./problems/20.js)
+ - [Given an array of time intervals (start, end) for classroom lectures (possibly overlapping), find the minimum number of rooms required.](./problems/21.js)
