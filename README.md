@@ -22,3 +22,4 @@
  - [Given an array of time intervals (start, end) for classroom lectures (possibly overlapping), find the minimum number of rooms required.](./problems/21.js)
  - [Given a dictionary of words and a string made up of those words (no spaces), return the original sentence in a list.](./problems/22.js)
  - [Given a string of round, curly, and square open and closing brackets, return whether the brackets are balanced (well-formed).](./problems/27.js)
+ - [You have an N by N board. Write a function that, given N, returns the number of possible arrangements of the board where N queens can be placed on the board without threatening each other, i.e. no two queens share the same row, column, or diagonal.](./problems/38.js)
