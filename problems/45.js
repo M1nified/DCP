@@ -33,7 +33,6 @@ async function testUsing(solution) {
             counts[num].count++;
             if (num % 1 > 0 || num > 7 || num < 1) {
                 errors++;
-                // console.log(num);
             }
         }
         console.log(`${errors} values out of range encountered.`);
