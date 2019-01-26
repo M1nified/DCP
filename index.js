@@ -78,7 +78,6 @@ function launchProblem(fileUrl) {
                             colWidths[colName] = Math.max(colWidths[colName] || 0, row[colName].toString().length);
                     }
                 }
-                console.log(indexColWidth, colWidths);
                 let 
                     rows = [],
                     headRow = [],
