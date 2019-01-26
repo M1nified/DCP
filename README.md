@@ -23,3 +23,4 @@
  - [Given a dictionary of words and a string made up of those words (no spaces), return the original sentence in a list.](./problems/22.js)
  - [Given a string of round, curly, and square open and closing brackets, return whether the brackets are balanced (well-formed).](./problems/27.js)
  - [You have an N by N board. Write a function that, given N, returns the number of possible arrangements of the board where N queens can be placed on the board without threatening each other, i.e. no two queens share the same row, column, or diagonal.](./problems/38.js)
+ - [Using a function rand5() that returns an integer from 1 to 5 (inclusive) with uniform probability, implement a function rand7() that returns an integer from 1 to 7 (inclusive).](./problems/45.js)
