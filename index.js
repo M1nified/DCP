@@ -65,6 +65,53 @@ function launchProblem(fileUrl) {
             console.info = function(...args){
                 document.getElementById('code').appendChild(document.createTextNode((line++).toString().padStart(3, ' ') + '| ' + args.join(' ') + '\\n')); cc.info(...args);
             }
+            console.table = function(data, columns){
+                let
+                    colWidths = {},
+                    indexColHeader = '(index)',
+                    indexColWidth = indexColHeader.length;
+                for(let rowKey in data){
+                    indexColWidth = Math.max(indexColWidth, rowKey.toString().length);
+                    const row = data[rowKey];
+                    for(let colName in row){
+                        if(!Array.isArray(columns) || columns.indexOf(colName) !== -1)
+                            colWidths[colName] = Math.max(colWidths[colName] || 0, row[colName].toString().length);
+                    }
+                }
+                console.log(indexColWidth, colWidths);
+                let 
+                    rows = [],
+                    headRow = [],
+                    separationRow = [];
+                headRow.push(indexColHeader.toString().padEnd(indexColWidth, ' '));
+                separationRow.push(''.padEnd(indexColWidth, '-'));
+                for(let colKey in colWidths){
+                    colWidths[colKey] = Math.max(colWidths[colKey] || 0, colKey.toString().length)
+                    headRow.push(colKey.toString().padEnd(colWidths[colKey], ' '));
+                    separationRow.push(''.padEnd(colWidths[colKey], '-'));
+                }
+                rows.push(\`|-\${separationRow.join('-|-')}-|\`);
+                rows.push(\`| \${headRow.join(' | ')} |\`);
+                rows.push(\`|-\${separationRow.join('-|-')}-|\`);
+                for(let rowKey in data){
+                    let 
+                        dataRow = data[rowKey],
+                        row = [];
+                    row.push(rowKey.toString().padEnd(indexColWidth, ' '));
+                    for(let colKey in colWidths){
+                        let colValue = '';
+                        if(dataRow.hasOwnProperty(colKey)){
+                            colValue = dataRow[colKey];
+                        }
+                        row.push(colValue.toString().padEnd(colWidths[colKey], ' '));
+                    }
+                    rows.push(\`| \${row.join(' | ')} |\`);
+                }
+                rows.push(\`|-\${separationRow.join('-|-')}-|\`);
+                const output = rows.join('\\n');
+                document.getElementById('code').appendChild(document.createTextNode((line++).toString().padStart(3, ' ') + '| ' + output.replace(/\\n/g, '\\n     ') + '\\n'));
+                cc.table(data, columns);
+            }
             </script>
             <script>${code}</script></body>`;
                 consoleElement.classList.add('console');
